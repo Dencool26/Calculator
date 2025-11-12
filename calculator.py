@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # Program make a simple calculator that can add, subtract, multiply and divide using functions
 
+
 # This function multiplies two numbers
 def multiply(x, y):
    return x * y
@@ -8,6 +9,10 @@ def multiply(x, y):
 # This function divides two numbers
 def divide(x, y):
    return x / y
+
+# This function adds two numbers 
+def add(x, y):
+   return x + yr
 
 print("Select operation.")
 print("1.Add")
@@ -20,10 +25,13 @@ choice = input("Enter choice(1/2/3/4):")
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 
-if choice == '3':
+if choice == '1':
+   print(num1,"+",num2,"=", add(num1,num2))
+elif choice == '3':
    print("Not implemented yet")
 
 elif choice == '4':
    print(num1,"/",num2,"=", divide(num1,num2))
+
 else:
    print("Invalid input ",choice)
