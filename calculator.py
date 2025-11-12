@@ -12,7 +12,13 @@ def divide(x, y):
 
 # This function adds two numbers 
 def add(x, y):
+   #dummy implementation
    return x + y
+
+# This function subtracts two numbers 
+def subtract(x, y):
+   return x - y
+
 
 print("Select operation.")
 print("1.Add")
@@ -30,7 +36,7 @@ if choice == '1':
    print(num1,"+",num2,"=", add(num1,num2))
 
 elif choice == '2':
-   print("should sub")
+   print(num1,"-",num2,"=", subtract(num1,num2))
 
 elif choice == '3':
    print(num1,"*",num2,"=", multiply(num1,num2))
